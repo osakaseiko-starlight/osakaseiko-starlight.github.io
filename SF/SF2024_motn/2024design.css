@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+/* sRGBの色指定 */
+body {
+    background-color: rgb(25,33,60);
+}
