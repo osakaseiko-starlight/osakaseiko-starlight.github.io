@@ -84,3 +84,7 @@ h1 {
 label {
     color: rgb(255, 255, 255);
 }
+
+forms {
+    border-radius: 8px;
+}
