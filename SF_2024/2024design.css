@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* sRGBの色指定 */
+body {
+    background-color: rgb(25,33,60);
+}
+
+h1.en {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: ivyora-text, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.bookInfo {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    width: calc(100% - 40px); /* 左右の余白を引いた幅を設定 */
+    margin: 20px;
+    font-family: ten-mincho, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* 横幅が足りなくなったら改行 */
+    gap: 10px; /* 要素間の間隔を設定 */
+}
+
+.item {
+    flex: 1 1 200px; /* 各要素の基本幅を200pxに設定 */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(38, 53, 103);
+    text-align: center;
+}
+
+.preview {
+    width: 180px;
+}
+
+.bookTitle {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: ten-mincho, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.preparing {
+    font-family: kinuta-shin-enpitsu-stdn, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
