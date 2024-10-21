@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="../SF_2024/2024design.css">
     <link rel="stylesheet" href="../SF_2024/loading.css">
     <link rel="stylesheet" href="../SF_2024/menubar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=open_in_new" />
+    <style>
+        .material-symbols-outlined {
+            color: rgb(255,255,255);
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
     <script>
         (function(d) {
           var config = {
@@ -40,14 +51,21 @@
             </div>
             <div>
                 <h1>質問とアンケート</h1>
+                <p class="bookInfo">企画の内容に関する質問は左（もしくは上）の「質問フォーム」，企画に関するアンケートにご協力いただける方は右（もしくは下）の「企画アンケート」からお願いします．</p>
                 <div class="container">
                     <div class="item">
                         <iframe class="forms" height="430px" width="97%" src="https://forms.office.com/r/ajjiShvBZp?embed=true"> </iframe> <br>
-                        <p class="bookTitle">質問する</p>
+                        <div>
+                            <span class="material-symbols-outlined">open_in_new</span>
+                            <a href="https://forms.office.com/r/ajjiShvBZp?embed=true" target="_blank" class="bookTitle">質問する</a>
+                        </div>
                     </div>
                     <div class="item">
                         <iframe class="forms" height="430px" width="97%" src="https://forms.gle/u23ktgQRj3opiL3e6"> </iframe> <br>
-                        <p class="bookTitle">アンケート</p>
+                        <div>
+                            <span class="material-symbols-outlined">open_in_new</span>
+                            <a href="https://forms.gle/u23ktgQRj3opiL3e6" target="_blank" class="bookTitle">アンケート</a>
+                        </div>
                     </div>
                 </div>
                 <h2 class="ja"></h2>

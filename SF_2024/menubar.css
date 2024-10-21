@@ -67,8 +67,3 @@ a.here:visited {
     color: rgb(255, 231, 47);
     text-decoration: none;
 }
-
-a.here:hover {
-    text-decoration: underline;
-    color: rgb(255, 231, 47, 0.6);
-}

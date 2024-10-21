@@ -85,6 +85,29 @@ label {
     color: rgb(255, 255, 255);
 }
 
-forms {
+.forms {
     border-radius: 8px;
+}
+
+.bookTitle:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.bookTitle:link {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.bookTitle:visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
