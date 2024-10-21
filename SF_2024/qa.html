@@ -29,27 +29,36 @@
         })(document);
     </script>
     <script>
-            async function submitForm(event) {
-              event.preventDefault();
-              const form = event.target;
-              const formData = new FormData(form);
-              const data = {};
-              formData.forEach((value, key) => {
-                data[key] = value;
-              });
-      
-              const response = await fetch(form.action, {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-              });
-      
+        async function submitForm(event) {
+          event.preventDefault(); // フォームのデフォルトの送信動作を防ぐ
+          const form = event.target;
+          const formData = new FormData(form);
+          const data = {};
+          formData.forEach((value, key) => {
+            data[key] = value;
+          });
+  
+          try {
+            const response = await fetch(form.action, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+            });
+  
+            if (response.ok) {
               const result = await response.json();
-              alert(result.result);
+              alert(result.result); // 成功メッセージを表示
+            } else {
+              alert('送信に失敗しました。');
             }
-    </script>
+          } catch (error) {
+            console.error('Error:', error);
+            alert('エラーが発生しました。');
+          }
+        }
+      </script>
 </head>
 <body id="topPage2024">
     <!--OP-->
@@ -75,7 +84,7 @@
                     <label for="feedback">質問と感想:</label>
                     <textarea id="feedback" name="feedback"></textarea><br>
                     <input type="submit" value="送信">
-                  </form>
+                </form>
             </div>
         </main>
     </div>
