@@ -28,6 +28,28 @@
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
     </script>
+    <script>
+            async function submitForm(event) {
+              event.preventDefault();
+              const form = event.target;
+              const formData = new FormData(form);
+              const data = {};
+              formData.forEach((value, key) => {
+                data[key] = value;
+              });
+      
+              const response = await fetch(form.action, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+              });
+      
+              const result = await response.json();
+              alert(result.result);
+            }
+    </script>
 </head>
 <body id="topPage2024">
     <!--OP-->
@@ -49,11 +71,11 @@
             </div>
             <div>
                 <h1>部誌の内容などの質問</h1>
-                <form method="post" action="https://script.google.com/macros/s/AKfycbzfujxdoTHgp2TIePNebkYJxSm5f9du6gU-P1ePg468A4QqAhJcjpLh6SWanVuS-Szw/exec">
+                <form onsubmit="submitForm(event)" action="https://script.google.com/macros/s/AKfycbxvqCBNpIOlur6GSn-fnEedul6miYg7q8w6fWobC_iD2FVzN0cuUx84i2jI04JJGq48/exec">
                     <label for="feedback">質問と感想:</label>
                     <textarea id="feedback" name="feedback"></textarea><br>
                     <input type="submit" value="送信">
-                </form>
+                  </form>
             </div>
         </main>
     </div>
