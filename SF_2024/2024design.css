@@ -5,7 +5,7 @@ body {
     background-color: rgb(25,33,60);
 }
 
-h1.en {
+h2.en {
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: ivyora-text, sans-serif;
@@ -27,6 +27,8 @@ h1.en {
     display: flex;
     flex-wrap: wrap; /* 横幅が足りなくなったら改行 */
     gap: 10px; /* 要素間の間隔を設定 */
+    padding-bottom: 20px;
+    width: calc(100% - 40px); /* 左右の余白を引いた幅を設定 */
 }
 
 .item {
@@ -35,10 +37,14 @@ h1.en {
     box-sizing: border-box;
     background-color: rgb(38, 53, 103);
     text-align: center;
+    border-radius: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .preview {
     width: 180px;
+    border-radius: 8px;
 }
 
 .bookTitle {
@@ -56,4 +62,13 @@ h1.en {
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 40px;
+}
+
+h1 {
+    font-family: ten-mincho, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 13px;;
 }
