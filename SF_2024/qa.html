@@ -19,37 +19,6 @@
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
     </script>
-    <script>
-        async function submitForm(event) {
-          event.preventDefault(); // フォームのデフォルトの送信動作を防ぐ
-          const form = event.target;
-          const formData = new FormData(form);
-          const data = {};
-          formData.forEach((value, key) => {
-            data[key] = value;
-          });
-  
-          try {
-            const response = await fetch(form.action, {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify(data)
-            });
-  
-            if (response.ok) {
-              const result = await response.json();
-              alert(result.result); // 成功メッセージを表示
-            } else {
-              alert('送信に失敗しました。');
-            }
-          } catch (error) {
-            console.error('Error:', error);
-            alert('エラーが発生しました。');
-          }
-        }
-      </script>
 </head>
 <body id="topPage2024">
     <!--OP-->
@@ -70,12 +39,8 @@
                 </div>
             </div>
             <div>
-                <h1>部誌の内容などの質問</h1>
-                <form onsubmit="submitForm(event)" action="https://script.google.com/macros/s/AKfycbxHGNYLS3n357gMR72ufv3XBviM_aOy4-4fiN_14wTKhy7Pu6Az5dMmBBd6Hpv9fXNg/exec">
-                    <label for="feedback" class="bookTitle">質問と感想:</label>
-                    <textarea id="feedback" name="feedback"></textarea><br>
-                    <input type="submit" value="送信">
-                </form>
+                <h1>質問とアンケート</h1>
+                <h2>質問する</h2>
             </div>
         </main>
     </div>
