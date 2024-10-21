@@ -84,9 +84,3 @@ h1 {
 label {
     color: rgb(255, 255, 255);
 }
-
-.forms {
-    width: calc(100% - 40px); /* 左右の余白を引いた幅を設定 */
-    border-radius: 5px;
-    text-align: center;
-}
