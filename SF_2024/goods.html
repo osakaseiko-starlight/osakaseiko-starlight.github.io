@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>グッズ | Starlight Planetarium 2024</title>
+    <meta name="theme-color" content="rgb(25,33,60)">
+    <meta name="copyright" content="Copyright&copy; 大阪星光学院天文部">
+    <link rel="stylesheet" href="../SF_2024/2024design.css">
+    <link rel="stylesheet" href="../SF_2024/loading.css">
+    <link rel="stylesheet" href="../SF_2024/menubar.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'wun6iuf',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+</head>
+<body id="topPage2024">
+    <!--OP-->
+    <div id="loader"></div>
+
+    <!--メインブロック-->
+    <div class="mainBlock" style="display:none;">
+        <main>
+            <!-- 実際のコンテンツ -->
+            <div class="menubar" style="display: grid; grid-template-columns: 1fr auto;">
+                <Text class="menuTitle">Starlight Planetarium 2024</Text>
+                <div class="navi">
+                    <a href="../index.html" class="navi" target="_blank">Home</a>
+                    <a href="../SF_2024/index.html" class="here">Goods</a>
+                    <a href="../SF_2024/qa.html" class="navi">Q&A</a>
+                    <a href="https://seikosf24.github.io" class="navi" target="_blank">BE SEIKO</a>
+                    <a class="navi"></a>
+                </div>
+            </div>
+            <div>
+                <h1>部誌</h1>
+                <p id="bookInfoFirst" class="bookInfo">天文部では，毎年SFの時に，部誌を作っております．今年の最新号に加えて，過去数年分をこちらのページで公開中です！ぜひご覧ください．<br>
+                個人情報保護のため，名前を隠すなどの変更を行なっております．SF当日に配布しました冊子と一部異なる場合がありますので，ご了承ください．<br>
+                Q&Aページに，部誌の内容などに関する質問フォームと，今年度の企画に関するアンケートがありますので，ご協力をお願いします．</p>
+                <h2 class="en">The Scientific Seiko 2024</h1>
+                <div class="container">
+                    <a href="../SF_2024/24_bookimg/24101.pdf" target="_blank"><div class="item">
+                        <img class="preview" src="../SF_2024/24_bookimg/24101.png"></img>
+                        <br>
+                        <a class="bookTitle">本編 No.43 上巻</a>
+                    </div></a>
+                    <a href="../SF_2024/24_bookimg/24102.pdf" target="_blank"><div class="item">
+                        <img class="preview" src="../SF_2024/24_bookimg/24102.png"></img>
+                        <br>
+                        <a class="bookTitle">本編 No.43 下巻</a>
+                    </div></a>
+                    <a href="../SF_2024/24_bookimg/24201.pdf" target="blank"><div class="item">
+                        <img class="preview" src="../SF_2024/24_bookimg/24201.png"></img>
+                        <p class="preparing">準備中...</p>
+                        <br>
+                        <a class="bookTitle">For Beginners</a>
+                    </div></a>
+                </div>
+                <h2 class="en">The Scientific Seiko 2023</h1>
+                <div class="container">
+                    <a href="../SF_2024/23_bookimg/The Scientific Seiko No.42.pdf" target="_blank"><div class="item">
+                        <img class="preview" src="../SF_2024/23_bookimg/23101.png"></img>
+                        <br>
+                        <a class="bookTitle">本編 No.42</a>
+                    </div></a>
+                    <a href="../SF_2024/23_bookimg/活動報告編No.1.pdf" target="_blank"><div class="item">
+                        <img class="preview" src="../SF_2024/23_bookimg/23201.png"></img>
+                        <br>
+                        <a class="bookTitle">活動報告編 No.1</a>
+                    </div></a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('loader').style.display = 'none';
+                document.querySelector('.mainBlock').style.display = 'block';
+            }, 1450);
+        });
+    </script>
+</body>
+</html>
