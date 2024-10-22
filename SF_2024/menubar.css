@@ -33,6 +33,16 @@
     align-items: end;
 }
 
+.navija {
+    font-family: ten-mincho, serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 18px;
+    text-align: right;
+    margin-left: 10px;
+    align-items: end;
+}
+
 a.navi:link {
     color: #ffffff;
     text-decoration: none;
