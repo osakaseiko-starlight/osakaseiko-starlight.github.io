@@ -7,7 +7,7 @@
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
-    background: url('blue_stamp.jpg') no-repeat center center;
+    background: url('blue_stamp.png') no-repeat center center;
     background-size: contain;
     animation: pulse 1.6s infinite;
 }
