@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# HTTPSへのリダイレクト
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://osakaseiko-starlight.github.io/$1 [R=301,L]
+
+# wwwからのリダイレクト
+RewriteCond %{HTTP_HOST} ^www\.example-site\.com$ [NC]
+RewriteRule ^(.*)$ https://example-site.com/$1 [R=301,L]
+
+# indexファイルのリダイレクト
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/index\.(html|htm|php)\s [NC]
+RewriteRule ^index\.(html|htm|php)$ https://example-site.com/ [R=301,L]
