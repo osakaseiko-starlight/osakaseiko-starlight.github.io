@@ -12,6 +12,7 @@
     box-sizing: border-box; /* パディングを含めた幅を計算 */
     border-radius: 20px;
     z-index: 1000; /* 他の要素より前面に表示 */
+    height: 108px;
 }
 
 .menuTitle {
