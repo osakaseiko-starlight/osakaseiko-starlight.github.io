@@ -35,7 +35,7 @@ h3.ja {
     display: flex;
     flex-wrap: wrap; /* 横幅が足りなくなったら改行 */
     gap: 10px; /* 要素間の間隔を設定 */
-    padding-bottom: 20px;
+    padding-top: 10px;
     width: calc(100% - 40px); /* 左右の余白を引いた幅を設定 */
 }
 
@@ -78,7 +78,7 @@ h2 {
     font-style: normal;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 13px;;
+    padding-top: 13px;
 }
 
 label {
@@ -112,4 +112,11 @@ label {
   'opsz' 24
 }
 
-
+h1 {
+    font-family: ten-mincho, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 13px;
+}
