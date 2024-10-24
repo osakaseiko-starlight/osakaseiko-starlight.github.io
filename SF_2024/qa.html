@@ -54,6 +54,18 @@
                     <a class="navi"></a>
                 </div>
             </div>
+            <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                    var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.querySelector('.menubar').style.top = "5px"; // 元の位置に戻す
+                    } else {
+                        document.querySelector('.menubar').style.top = "-150px"; // メニューバーを隠す
+                    }
+                    prevScrollpos = currentScrollPos;
+                }
+            </script>     
             <div>
                 <h2>質問コーナーとアンケート</h2>
                 <p class="bookInfo">企画の内容に関する質問は左（もしくは上）の「質問フォーム」，企画に関するアンケートにご協力いただける方は右（もしくは下）の「企画アンケート」からお願いします．</p>

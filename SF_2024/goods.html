@@ -43,6 +43,18 @@
                     <a class="navi"></a>
                 </div>
             </div>
+            <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                    var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.querySelector('.menubar').style.top = "5px"; // 元の位置に戻す
+                    } else {
+                        document.querySelector('.menubar').style.top = "-150px"; // メニューバーを隠す
+                    }
+                    prevScrollpos = currentScrollPos;
+                }
+            </script>            
             <div>
                 <h2>部誌</h2>
                 <p id="bookInfoFirst" class="bookInfo">大阪星光学院天文部では，毎年SFの時に，部誌を作っております．今年の最新号に加えて，過去数年分をこちらのページで公開中です！ぜひご覧ください．<br>
