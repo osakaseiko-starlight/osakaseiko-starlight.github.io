@@ -10,11 +10,7 @@
     <link rel="stylesheet" href="../SF_2024/loading.css">
     <link rel="stylesheet" href="../SF_2024/menubar.css">
     <link rel="icon" type="image/png" href="../SF_2024/blue_stamp.png">
-    <script type="text/javascript">
-        setTimeout(function(){
-            window.location.href = 'https://osakaseiko-starlight.github.io/SF_2024/goods.html';
-        }, 5); // 5/1000秒後にリダイレクト
-    </script>
+    <script src="../SF_2024/menubar.js"></script>
     <script>
         (function(d) {
           var config = {
@@ -33,7 +29,46 @@
     <!--メインブロック-->
     <div class="mainBlock" style="display:none;">
         <main>
-            
+            <!-- 実際のコンテンツ -->
+            <div class="menubar" style="display: grid; grid-template-columns: 1fr auto;">
+                <Text class="menuTitle">Starlight Planetarium 2024</Text>
+                <div class="navi desktop-navi">
+                    <a href="../index.html" class="navi" target="_blank">Home</a>
+                    <a href="../SF_2024/index.html" class="navi">SF</a>
+                    <a href="../SF_2024/goods.html" class="navi">Goods</a>
+                    <a href="../SF_2024/qa.html" class="here">Q&A</a>
+                    <a href="https://seikosf24.github.io" class="navi" target="_blank">BE SEIKO</a>
+                </div>
+                <div class="navi mobile-navi">
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="dropdown-content" style="display: none;">
+                        <a href="../index.html" class="navi">Home</a>
+                        <a href="../SF_2024/index.html" class="navi">SF</a>
+                        <a href="../SF_2024/goods.html" class="navi">Goods</a>
+                        <a href="../SF_2024/qa.html" class="here">Q&A</a>
+                        <a href="https://seikosf24.github.io" class="navi">BE SEIKO</a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                    var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.querySelector('.menubar').style.top = "5px"; // 元の位置に戻す
+                    } else {
+                        document.querySelector('.menubar').style.top = "-83px"; // メニューバーを隠す
+                    }
+                    prevScrollpos = currentScrollPos;
+                }
+            </script>  
+            <div>
+                <image class="topImage" src="../SF_2024/top-sourceImg/GOPR0069_DkJ8vBOrGMEOe_0_1705454354713.JPG"></image>
+            </div>
         </main>
     </div>
 
@@ -42,7 +77,7 @@
             setTimeout(function() {
                 document.getElementById('loader').style.display = 'none';
                 document.querySelector('.mainBlock').style.display = 'block';
-            }, 0);
+            }, 1000);
         });
     </script>
 </body>
