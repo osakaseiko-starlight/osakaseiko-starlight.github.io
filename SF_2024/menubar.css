@@ -79,3 +79,38 @@ a.here:visited {
     color: rgb(255, 231, 47);
     text-decoration: none;
 }
+
+/* 初期状態ではモバイルナビを隠す */
+.mobile-navi {
+    display: none;
+}
+
+/* パソコン用のスタイル */
+@media (min-width: 768px) {
+    .mobile-navi {
+        display: none; /* モバイルナビは隠す */
+    }
+    .desktop-navi {
+        display: flex; /* デスクトップナビを表示 */
+    }
+}
+
+/* スマホ用のスタイル */
+@media (max-width: 767px) {
+    .desktop-navi {
+        display: none; /* デスクトップナビを隠す */
+    }
+    .mobile-navi {
+        display: flex; /* モバイルナビを表示 */
+        justify-content: flex-end; /* 右寄せにする */
+    }
+
+    .menu-button {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: ivyora-text, sans-serif;
+        font-weight: 100;
+        font-size: 18px;
+        padding: 10px; /* 必要に応じて余白を追加 */
+    }
+}
