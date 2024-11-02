@@ -126,18 +126,34 @@ a.here:visited {
     justify-content: space-around; /* 間隔を均等に */
     width: 30px; /* 幅を指定 */
     height: 25px; /* 高さを指定 */
+    transition: transform 0.3s ease; /* 回転のアニメーションを追加 */
 }
 
 .bar {
     height: 4px; /* バーの高さ */
     width: 100%; /* 幅を100% */
     background-color: white; /* バーの色 */
-    transition: 0.3s; /* トランジション効果 */
+    transition: all 0.3s ease; /* すべてのスタイルをアニメーション化 */
+}
+
+/* 開いた時のスタイル */
+.hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* 1番上のバーを回転 */
+}
+
+.hamburger.open .bar:nth-child(2) {
+    opacity: 0; /* 真ん中のバーを透明に */
+}
+
+.hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* 3番目のバーを回転 */
 }
 
 /* ドロップダウンメニューのスタイル */
 .dropdown-content {
     position: absolute; /* 位置を調整 */
+    top: 85px;
+    right: 0;
     background-color: rgb(0, 16, 72);
     min-width: 160px; /* 幅を設定 */
     z-index: 1000; /* 他の要素より前面に表示 */
