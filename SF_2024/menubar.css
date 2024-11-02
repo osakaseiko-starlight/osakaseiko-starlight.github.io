@@ -114,3 +114,39 @@ a.here:visited {
         padding: 10px; /* 必要に応じて余白を追加 */
     }
 }
+
+/* ハンバーガー */
+.hamburger {
+    cursor: pointer; /* カーソルをポインターに */
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    justify-content: space-around; /* 間隔を均等に */
+    width: 30px; /* 幅を指定 */
+    height: 25px; /* 高さを指定 */
+}
+
+.bar {
+    height: 4px; /* バーの高さ */
+    width: 100%; /* 幅を100% */
+    background-color: white; /* バーの色 */
+    transition: 0.3s; /* トランジション効果 */
+}
+
+/* ドロップダウンメニューのスタイル */
+.dropdown-content {
+    position: absolute; /* 位置を調整 */
+    background-color: rgb(0, 16, 72);
+    min-width: 160px; /* 幅を設定 */
+    z-index: 1000; /* 他の要素より前面に表示 */
+}
+
+.dropdown-content a {
+    color: white; /* リンクの色 */
+    text-decoration: none; /* 下線を消す */
+    display: block; /* 各リンクをブロック要素に */
+    padding: 10px; /* 余白を追加 */
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(255, 255, 255, 0.2); /* ホバー時の背景色 */
+}
