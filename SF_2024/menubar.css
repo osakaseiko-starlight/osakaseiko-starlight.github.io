@@ -90,6 +90,7 @@ a.here:visited {
     .mobile-navi {
         display: none; /* モバイルナビは隠す */
     }
+    }
     .desktop-navi {
         display: flex; /* デスクトップナビを表示 */
     }
