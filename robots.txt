@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: http://osakaseiko-starlight.github.io/sitemap.xml
+Disallow: /
